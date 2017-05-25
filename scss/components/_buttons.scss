@@ -1,0 +1,13 @@
+@import './buttons/_extends.scss';
+
+.c-button-default {
+  @extend .c-button;
+}
+
+.c-button-circle {
+  @extend .c-button;
+  text-align: center;
+  width: 2em;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #141b1f;
+  border: 1px solid purple; }
+
+.c-button, .c-button-default, .c-button-circle {
+  text-decoration: none;
+  display: inline-block;
+  height: 2em;
+  padding: 0.4em 1em;
+  border-radius: 1em;
+  background-color: #00a5ff; }
+
+.c-button-circle {
+  text-align: center;
+  width: 2em;
+  padding-left: 0;
+  padding-right: 0; }
+
+/*# sourceMappingURL=style.css.map */
