@@ -1,0 +1,31 @@
+/*
+  There are some common font definitions in _global.scss.
+*/
+
+$sizes: formTextSizes($text-initial-size);
+
+@import './typography/_mixins.scss';
+
+.alpha {
+  font-size: nth($sizes, 1);
+  font-family: $serif;
+}
+.beta {
+  font-family: $serif;
+  font-size: nth($sizes, 2);
+}
+.gamma {
+  font-family: $serif;
+  font-size: nth($sizes, 3);
+}
+.delta {
+  font-size: nth($sizes, 4);
+}
+.epsilon {
+  font-size: nth($sizes, 5);
+}
+.zeta {
+  font-size: nth($sizes, 6);
+}
+
+p { @include text-regular($sans-serif, 5, normal); }

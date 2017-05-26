@@ -1,24 +1,77 @@
+div {
+  height: 30px; }
+
+div.subtle {
+  background-color: #c7cad1; }
+
+div.gray {
+  background-color: #8f95a3; }
+
 * {
   box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
   height: 100%;
-  background-color: #141b1f;
-  border: 1px solid purple; }
+  background-color: #c7cad1;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  color: #2e3138; }
 
-.c-button, .c-button-default, .c-button-circle {
+/*
+  There are some common font definitions in _global.scss.
+*/
+.alpha {
+  font-size: 5.5em;
+  font-family: "Lora", "Girgia", "Times New Roman", serif; }
+
+.beta {
+  font-family: "Lora", "Girgia", "Times New Roman", serif;
+  font-size: 4.125em; }
+
+.gamma {
+  font-family: "Lora", "Girgia", "Times New Roman", serif;
+  font-size: 3.09375em; }
+
+.delta {
+  font-size: 2.32031em; }
+
+.epsilon {
+  font-size: 1.74023em; }
+
+.zeta {
+  font-size: 1.30518em; }
+
+p {
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 1.74023em;
+  font-weight: normal; }
+
+.c-button-default {
   text-decoration: none;
   display: inline-block;
-  height: 2em;
-  padding: 0.4em 1em;
-  border-radius: 1em;
-  background-color: #00a5ff; }
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  border-radius: 1.25em;
+  background-color: #00a5ff;
+  color: white;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 1.74023em;
+  font-weight: bold;
+  padding: 0 2em; }
 
 .c-button-circle {
+  text-decoration: none;
+  display: inline-block;
+  height: 2.5em;
+  line-height: 2.5em;
   text-align: center;
-  width: 2em;
-  padding-left: 0;
-  padding-right: 0; }
+  border-radius: 1.25em;
+  background-color: #00a5ff;
+  color: white;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 1.74023em;
+  font-weight: bold;
+  width: 2.5em; }
 
 /*# sourceMappingURL=style.css.map */

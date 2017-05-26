@@ -1,13 +1,13 @@
-@import './buttons/_extends.scss';
+@import './buttons/_mixins.scss';
 
 .c-button-default {
-  @extend .c-button;
+  @include c-button(2.5em, $color-brand, $color-base);
+  @include text-regular($sans-serif, 5, bold);
+  padding: 0 2em;
 }
 
 .c-button-circle {
-  @extend .c-button;
-  text-align: center;
-  width: 2em;
-  padding-left: 0;
-  padding-right: 0;
+  @include c-button(2.5em, $color-brand, $color-base);
+  @include text-regular($sans-serif, 5, bold);
+  width: 2.5em;
 }

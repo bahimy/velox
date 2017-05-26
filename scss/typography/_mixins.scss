@@ -1,0 +1,5 @@
+@mixin text-regular($fam, $siz, $wei) {
+  font-family: $fam;
+  font-size: nth($sizes, $siz);
+  font-weight: $wei;
+}

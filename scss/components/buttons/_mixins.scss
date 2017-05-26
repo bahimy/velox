@@ -1,0 +1,10 @@
+@mixin c-button($height, $background, $color) {
+  text-decoration: none;
+  display: inline-block;
+  height: $height;
+  line-height: $height;
+  text-align: center;
+  border-radius: $height / 2;
+  background-color: $background;
+  color: $color;
+}
