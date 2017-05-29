@@ -5,7 +5,10 @@ html {
   font-size: 62.5%;
   height: 100%;
   background-color: $color-subtle;
-  // border: 1px solid purple;
   font-family: $sans-serif;
+  color: $color-strong;
+}
+a {
+  text-decoration: none;
   color: $color-strong;
 }

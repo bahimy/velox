@@ -1,4 +1,4 @@
-@mixin c-button($height, $background, $color) {
+@mixin button($height, $background, $color) {
   text-decoration: none;
   display: inline-block;
   height: $height;

@@ -1,0 +1,52 @@
+.c-services {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.c-service__item {
+  display: inline;
+}
+.c-service__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
+  padding: 1em;
+  margin-left: -0.2em;
+}
+.c-service__logo {
+  @include button(4em, $color-gray, $color-brand);
+  width: 4em;
+}
+.c-service__header {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  word-spacing: 0.3em;
+  margin: 0;
+  &:after {
+    content: "";
+    margin: 1em auto;
+    display: block;
+    width: 5em;
+    height: 2px;
+    background-color: $color-gray;
+  }
+}
+.c-service__description {
+  font-size: nth($sizes, 6);
+  line-height: 1.5;
+}
+
+.c-work-sample {
+  width: 33%;
+}
+.c-work-sample__image {
+  width: 100%;
+}
+.c-work-sample__caption {
+  margin-top: -0.2em;
+  font-size: nth($sizes, 6);
+  font-weight: bold;
+  padding: 1.5em;
+  background-color: $color-base;
+}

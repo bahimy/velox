@@ -1,0 +1,10 @@
+.c-navmenu__item {
+  overflow: hidden;
+  display: inline;
+}
+.c-navmenu__link {
+  display: inline-block;
+  padding: 0 1em;
+  @include text-navmenu($sans-serif, 6);
+  color: $color-gray;
+}

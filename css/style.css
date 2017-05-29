@@ -389,15 +389,6 @@ template {
 [hidden] {
   display: none; }
 
-div {
-  height: 30px; }
-
-div.subtle {
-  background-color: #c7cad1; }
-
-div.gray {
-  background-color: #8f95a3; }
-
 * {
   box-sizing: border-box; }
 
@@ -408,28 +399,32 @@ html {
   font-family: "Open Sans", "Verdana", sans-serif;
   color: #2e3138; }
 
+a {
+  text-decoration: none;
+  color: #2e3138; }
+
 /*
   There are some common font definitions in _global.scss.
 */
-h1, .alpha {
+h1, .u-alpha {
   font-size: 5.5em;
   font-family: "Lora", "Girgia", "Times New Roman", serif; }
 
-h2, .beta {
+h2, .u-beta {
   font-family: "Lora", "Girgia", "Times New Roman", serif;
   font-size: 4.125em; }
 
-h3, .gamma {
+h3, .u-gamma {
   font-family: "Lora", "Girgia", "Times New Roman", serif;
   font-size: 3.09375em; }
 
-h4, .delta {
+h4, .u-delta {
   font-size: 2.32031em; }
 
-h5, .epsilon {
+h5, .u-epsilon {
   font-size: 1.74023em; }
 
-h6, .zeta {
+h6, .u-zeta {
   font-size: 1.30518em; }
 
 p {
@@ -464,5 +459,74 @@ p {
   font-size: 1.74023em;
   font-weight: bold;
   width: 2.5em; }
+
+.c-navmenu__item {
+  overflow: hidden;
+  display: inline; }
+
+.c-navmenu__link {
+  display: inline-block;
+  padding: 0 1em;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  font-size: 1.30518em;
+  text-decoration: none;
+  color: #8f95a3; }
+
+.c-services {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.c-service__item {
+  display: inline; }
+
+.c-service__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 25%;
+  padding: 1em;
+  margin-left: -0.2em; }
+
+.c-service__logo {
+  text-decoration: none;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  border-radius: 2em;
+  background-color: #8f95a3;
+  color: #00a5ff;
+  width: 4em; }
+
+.c-service__header {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  word-spacing: 0.3em;
+  margin: 0; }
+  .c-service__header:after {
+    content: "";
+    margin: 1em auto;
+    display: block;
+    width: 5em;
+    height: 2px;
+    background-color: #8f95a3; }
+
+.c-service__description {
+  font-size: 1.30518em;
+  line-height: 1.5; }
+
+.c-work-sample {
+  width: 33%; }
+
+.c-work-sample__image {
+  width: 100%; }
+
+.c-work-sample__caption {
+  margin-top: -0.2em;
+  font-size: 1.30518em;
+  font-weight: bold;
+  padding: 1.5em;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */

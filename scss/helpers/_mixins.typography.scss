@@ -3,3 +3,9 @@
   font-size: nth($sizes, $siz);
   font-weight: $wei;
 }
+
+@mixin text-navmenu($fam, $siz) {
+  font-family: $fam;
+  font-size: nth($sizes, $siz);
+  text-decoration: none;
+}
