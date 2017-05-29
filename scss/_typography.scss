@@ -4,27 +4,27 @@
 
 $sizes: formTextSizes($text-initial-size);
 
-@import './typography/_mixins.scss';
+@import './helpers/_mixins.typography.scss';
 
-.alpha {
+h1, .alpha {
   font-size: nth($sizes, 1);
   font-family: $serif;
 }
-.beta {
+h2, .beta {
   font-family: $serif;
   font-size: nth($sizes, 2);
 }
-.gamma {
+h3, .gamma {
   font-family: $serif;
   font-size: nth($sizes, 3);
 }
-.delta {
+h4, .delta {
   font-size: nth($sizes, 4);
 }
-.epsilon {
+h5, .epsilon {
   font-size: nth($sizes, 5);
 }
-.zeta {
+h6, .zeta {
   font-size: nth($sizes, 6);
 }
 

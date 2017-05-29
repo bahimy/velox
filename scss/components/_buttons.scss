@@ -1,4 +1,4 @@
-@import './buttons/_mixins.scss';
+@import '../helpers/_mixins.buttons.scss';
 
 .c-button-default {
   @include c-button(2.5em, $color-brand, $color-base);
