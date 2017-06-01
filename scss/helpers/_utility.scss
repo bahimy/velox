@@ -1,0 +1,11 @@
+.u-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.u-circle {
+  padding: 0.3em !important;
+  width: 1.6em !important;
+  border-radius: 0.8em !important;
+}

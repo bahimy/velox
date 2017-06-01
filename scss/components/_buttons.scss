@@ -1,13 +1,16 @@
+$button-text-size: (nth($sizes, 5));
+$button-vertical-padding: 0.5em;
+$button-horizontal-padding: 2em;
+
 @import '../helpers/_mixins.buttons.scss';
+@import '../helpers/_extends.buttons.scss';
 
-.c-button-default {
-  @include button(2.5em, $color-brand, $color-base);
-  @include text-regular($sans-serif, 5, bold);
-  padding: 0 2em;
+.c-button {
+  @extend %button;
+  @include button($button-text-size, $button-vertical-padding);
+  background-color: $color-brand;
 }
-
-.c-button-circle {
-  @include button(2.5em, $color-brand, $color-base);
-  @include text-regular($sans-serif, 5, bold);
-  width: 2.5em;
+.c-button--circle {
+  padding: $button-vertical-padding;
+  width: 1em + ($button-vertical-padding * 2);
 }

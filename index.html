@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/style.css" title="Default" type="text/css" />
 </head>
 <body>
-    <a class="c-button c-button-default" href="#">Get Started Now</a>
-    <a class="c-button c-button-circle" href="#">G</a>
+    <a class="c-button" href="#">Get Started Now</a>
+    <a class="c-button c-button--circle" href="#">G</a>
     <h4>Heading</h4>
     <ul class="c-navmenu">
         <li class="c-navmenu__item">
@@ -28,7 +28,7 @@
     <ul class="c-services">
         <li class="c-service__item">
             <a class="c-service__link" href="#">
-                <p class="c-service__logo">I</p>
+                <p class="c-service__logo c-button u-circle">I</p>
                 <h6 class="c-service__header u-zeta">Logo design</h6>
                 <p class="c-service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
             </a>
@@ -57,10 +57,59 @@
     </ul>
     <div class="l-portfolio">
         <figure class="c-work-sample">
-            <img class="c-work-sample__image" src="./images/Portfolio/star_image.jpg" alt="Work exemplar" />
+            <img class="c-work-sample__image" src="./images/portfolio/star_image.jpg" alt="Work exemplar" />
             <figcaption class="c-work-sample__caption">Illustration</figcaption>
         </figure>
     </div>
+    <ul class="l-brands u-clearfix">
+        <li class="c-brand__container"><img class="c-brand__logo" src="./images/brands/harvest_co.jpg" alt="Harvest co logo" /></li>
+        <li class="c-brand__container"><img class="c-brand__logo" src="" alt="" /></li>
+        <li class="c-brand__container"><img class="c-brand__logo" src="" alt="" /></li>
+        <li class="c-brand__container"><img class="c-brand__logo" src="" alt="" /></li>
+        <li class="c-brand__container"><img class="c-brand__logo" src="" alt="" /></li>
+        <li class="c-brand__container"><img class="c-brand__logo" src="" alt="" /></li>
+    </ul>
+    <form class="l-contact" action="#" method="post">
+        <label class="c-contact__label"><p>Name</p>
+            <input type="text" name="Name" id="c-contact__name" value="" />
+        </label>
+        <label class="c-contact__label"><p>Subject</p>
+            <input type="text" name="Subject" id="c-contact__subject" value="" />
+        </label>
+        <label for="c-contact__message" class="c-contact__label" for=""><p>Your message</p>
+            <textarea name="message" id="c-contact__message" rows="8" cols="40"></textarea>
+        </label>
+    </form>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- div class="swiper-scrollbar"></div -->
+    </div>
+    <script src="./js/swiper.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            // loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            // slidesPerView: 'auto',
+            centeredSlieds: true,
+            paginationClicable: true,
+            spaceBetween: 30,
+            paginationBulletRender: function (swiper, index, className) {
+                return '<span class="' + className + '">' +
+                    (index + 1) + '</span>';
+            }
+        })
+    </script>
 </body>
 </html>
-

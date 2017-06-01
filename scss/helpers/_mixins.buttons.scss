@@ -1,10 +1,4 @@
-@mixin button($height, $background, $color) {
-  text-decoration: none;
-  display: inline-block;
-  height: $height;
-  line-height: $height;
-  text-align: center;
-  border-radius: $height / 2;
-  background-color: $background;
-  color: $color;
+@mixin button($font-size, $vertical-padding) {
+  font-size: $font-size;
+  border-radius: 0.5 + $vertical-padding;
 }
