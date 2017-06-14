@@ -1,0 +1,22 @@
+.u-text-color-base {
+  color: $color-base !important;
+}
+.u-text-capitals {
+  text-transform: uppercase;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-text-right {
+  text-align: right;
+}
+.u-text-underline {
+  &:after {
+    content: "";
+    display: block;
+    background-color: $color-brand;
+    height: 0.09em;
+    width: 3.5em;
+    margin: 0.5em auto 0;
+  }
+}

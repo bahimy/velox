@@ -1,5 +1,5 @@
 $button-text-size: (nth($sizes, 5));
-$button-vertical-padding: 0.5em;
+$button-vertical-padding: 1em;
 $button-horizontal-padding: 2em;
 
 @import '../helpers/_mixins.buttons.scss';

@@ -1,7 +1,12 @@
-.c-services {
+.c-gallery {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.c-services {
+  @extend .c-gallery;
+  padding: 5em 0;
 }
 .c-service__item {
   display: inline;
@@ -15,6 +20,23 @@
   margin-left: -0.2em;
 }
 .c-service__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin: 0 auto 1.5em;
+  background: $color-subtle no-repeat center center;
+}
+.c-service__logo--1 {
+  background-image: url("../images/icons/pencil.png");
+}
+.c-service__logo--2 {
+  background-image: url("../images/icons/interface.png");
+}
+.c-service__logo--3 {
+  background-image: url("../images/icons/bulb.png");
+}
+.c-service__logo--4 {
+  background-image: url("../images/icons/bezier.png");
 }
 .c-service__header {
   text-transform: uppercase;
@@ -33,19 +55,26 @@
 .c-service__description {
   font-size: nth($sizes, 6);
   line-height: 1.5;
+  color: $color-gray;
 }
 
-/* .l-portfolio {
-  border: 1px dashed purple;
-  padding: 0;
-} */
-
-.c-work-sample {
-  width: 33%;
+.c-work-samples {
+  @extend .c-gallery;
   margin: 0;
+  color: $color-gray;
+}
+.c-work-sample__container {
+  box-sizing: border-box;
+  float: left;
+  margin-right: 2%;
+  width: 32%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 .c-work-sample__image {
-  width: 100%;
+  max-width: 100%;
 }
 .c-work-sample__caption {
   margin-top: -0.2em;
@@ -55,17 +84,45 @@
   background-color: $color-base;
 }
 
-.l-brands {
-  list-style-type: none;
-  padding: 0;
-}
+
+/*
+          Brand Section
+*/
+
 .c-brand__container {
+  display: inline-block;
   width: 15%;
-  float: left;
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+
   &:nth-child(1n+2) {
-    margin-left: 2%;
+    // margin-left: 2%;
   }
 }
-.c-brand__logo {
+
+.c-brand__link {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
   width: 100%;
+}
+
+.c-brand__overlay {
+  position: absolute;
+  background-color: $color-base;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: .5;
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.c-brand__logo {
+  display: block;
+  margin: 0 auto;
 }

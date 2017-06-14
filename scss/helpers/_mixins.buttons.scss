@@ -1,4 +1,5 @@
 @mixin button($font-size, $vertical-padding) {
+  color: $color-base;
   font-size: $font-size;
   border-radius: 0.5 + $vertical-padding;
 }

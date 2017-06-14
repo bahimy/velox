@@ -4,11 +4,10 @@
 html {
   font-size: 62.5%;
   height: 100%;
-  background-color: $color-subtle;
   font-family: $sans-serif;
   color: $color-strong;
 }
 a {
   text-decoration: none;
-  color: $color-strong;
+  color: inherit;
 }

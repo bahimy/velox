@@ -1,10 +1,24 @@
 .swiper-container {
-  width: 800px;
-  height: 300px;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .swiper-slide {
   text-align: center;
   vertical-align: bottom;
+}
+.swiper-slide--custom1__image1 {
+  max-width: 100%;
+  padding-bottom: 8em;
+}
+.swiper-slide--custom1__cite {
+  font-family: $serif;
+  font-size: nth($sizes, 4);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.swiper-slide__link {
+  border-bottom: 1px solid $color-gray;
 }
 .swiper-button-next {
 }

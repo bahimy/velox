@@ -2,7 +2,11 @@
   There are some common font definitions in _global.scss.
 */
 
+$text-initial-size: 5.5em; // Seed for font sizes generator
 $sizes: formTextSizes($text-initial-size);
+
+$serif: 'Lora', 'Girgia', 'Times New Roman', serif;
+$sans-serif: 'Open Sans', 'Verdana', sans-serif;
 
 @import './helpers/_mixins.typography.scss';
 @import './helpers/_utility.typography.scss';

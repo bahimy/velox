@@ -1,10 +1,24 @@
+.c-navmenu {
+  margin: 0;
+  padding: 0;
+}
 .c-navmenu__item {
-  overflow: hidden;
+  line-height: 1;
+  padding: 0 1em;
   display: inline;
 }
 .c-navmenu__link {
   display: inline-block;
-  padding: 0 1em;
+  padding: 1em 0;
   @include text-navmenu($sans-serif, 6);
+}
+.c-navmenu__link--hover {
+  @extend .c-navmenu__link;
   color: $color-gray;
+  padding-bottom: 0.6em;
+  &:hover {
+    color: $color-brand;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $color-brand;
+  }
 }
