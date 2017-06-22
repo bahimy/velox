@@ -5,12 +5,21 @@ $button-horizontal-padding: 2em;
 @import '../helpers/_mixins.buttons.scss';
 @import '../helpers/_extends.buttons.scss';
 
-.c-button {
+.button {
   @extend %button;
   @include button($button-text-size, $button-vertical-padding);
   background-color: $color-brand;
 }
-.c-button--circle {
-  padding: $button-vertical-padding;
-  width: 1em + ($button-vertical-padding * 2);
+
+.button--h-indent {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.nav-toggle {
+  background-color: transparent;
+  border: 1px solid $color-strong;
+  color: $color-strong;
+  font-size: 3em;
+  display: none;
 }

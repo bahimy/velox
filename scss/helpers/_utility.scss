@@ -15,6 +15,27 @@
 .u-large-y-margins {
   margin: 4em auto !important;
 }
+
 .u-blcok-center {
   margin: 0 auto !important;
+}
+
+.u-remove {
+  display: none !important;
+}
+
+.u-show {
+  visibility: visible !important;
+}
+
+.u-hide {
+  visibility: hidden !important;
+}
+
+.u-transparent {
+  opacity: 0 !important;
+}
+
+.u-opaque {
+  opacity: 1 !important;
 }

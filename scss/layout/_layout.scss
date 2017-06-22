@@ -1,0 +1,107 @@
+            /*          Header
+             ******************************/
+
+.l-hero {
+  position: relative;
+  padding: 2em;
+}
+
+.l-navbar {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.l-companies-logo--header {
+  width: 30%;
+  display: inline-block;
+}
+
+.l-companies-nav--header {
+}
+
+.l-header {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 0 2em;
+  z-index: 1;
+}
+
+
+              /*        Services
+               ****************************/
+
+.l-services {
+  padding-top: 1px;
+}
+
+
+              /*       Portoflio
+               ****************************/
+
+.l-portfolio {
+  padding: 1px 0;
+  background-color: $color-subtle;
+}
+
+
+              /*        Brands
+               ************************/
+
+.l-brands {
+  list-style-type: none;
+  padding: 0;
+  // width: 90%;
+  margin: 5em auto;
+}
+
+
+              /*      Testimonials
+               **************************/
+
+.l-testimonials {
+  background-color: $color-subtle;
+  padding: 3em 0;
+}
+
+
+              /*      Contact Us
+               ***************************/
+
+.l-contacts {
+  padding: 3em 1em;
+  background-color: $color-strong;
+  color: $color-base;
+}
+
+.l-contacts__header {
+  margin: 0;
+  line-height: 1;
+}
+
+.l-contacts__cell {
+  margin: 1em;
+}
+
+.l-contacts__form {
+  padding: 0 1em;
+}
+
+.l-contacts__name {
+  float: left;
+  width: 48%;
+}
+
+.l-contacts__subject {
+  float: right;
+  width: 48%;
+}
+
+.l-contacts__message {
+  clear: both;
+  float: left;
+  width: 100%;
+}

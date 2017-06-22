@@ -1,0 +1,161 @@
+@media screen and (max-width: 740px) {
+                /*      Common
+                 ********************/
+
+  h2 {
+    font-size: nth($sizes, 3);
+  }
+
+
+                /*      Header
+                 ********************/
+
+  .l-companies-logo--header {
+    width: 60%;
+  }
+
+  .l-companies-nav--header {
+    color: $color-strong;
+    width: auto;
+    clear: both;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .5s;
+
+    & .navmenu__item {
+      border: 1px solid $color-strong;
+      display: block;
+      margin-bottom: 2px;
+      background-color: rgba($color-base, .7);
+      padding: 0;
+    }
+
+    & .navmenu__link {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+
+  .nav-toggle {
+    display: unset;
+    margin-bottom: 2px;
+  }
+
+  h1 {
+    line-height: 0.7;
+  }
+
+  .l-header__ln-break {
+    font-size: 0.5em;
+
+    &:before {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
+
+                /*    Services section
+                 ***************************/
+
+  .service__item {
+    width: 50%;
+  }
+
+
+                /*    Portfolio
+                 ***********************/
+
+  .work-sample__container {
+    width: 49%;
+    margin-bottom: 1em;
+
+    &:nth-child(1n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n+1) {
+      margin-right: 2%;
+    }
+  }
+
+
+                  /*         Brands
+                   *****************************/
+
+  .brand__container {
+    width: 33.333%;
+  }
+
+
+                  /*        Testimonials
+                   *****************************/
+
+  .swiper-container {
+    font-size: 0.7em;
+  }
+  .swiper-slide--custom1__item {
+    padding: 0 0.5em;
+  }
+}
+
+
+                  /*        Contacts
+                   *****************************/
+
+.l-contacts__cell--drop {
+  float: left;
+}
+
+
+
+
+
+/******************************************************************************/
+@media screen and (max-width: 400px) {
+
+
+                /*    Portfolio
+                 ***********************/
+
+  .services {
+    padding: 0;
+  }
+
+  .service__item {
+    width: 100%;
+  }
+
+  .service__logo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: -60px;
+    background-size: 20px;
+  }
+
+  .service__link {
+    text-align: left;
+    padding-left: 60px;
+    margin: 1em 2em;
+  }
+
+  .service__header {
+    padding-bottom: 1em;
+    border-bottom: 2px solid $color-subtle;
+
+    &:after {
+      content: none;
+    }
+  }
+
+
+
+                  /*         Brands
+                   *****************************/
+
+  .brand__container {
+    width: 50%;
+  }
+}
+

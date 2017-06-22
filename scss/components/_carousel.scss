@@ -3,10 +3,40 @@
   padding-top: 3em;
   padding-bottom: 3em;
 }
+
 .swiper-slide {
   text-align: center;
   vertical-align: bottom;
+  padding: 0 6em;
 }
+
+.swiper-slide--custom1__item {
+  display: inline-block;
+  padding: 0 2.5em;
+  position: relative;
+}
+.swiper-slide--custom1__images {
+  margin-bottom: 2em;
+  padding: 0;
+}
+.swiper-slide--custom1__image {
+  width: 8em;
+  border-radius: 4em;
+  vertical-align: middle;
+}
+.swiper-slide--custom1__image--accent {
+  width: 10em;
+  border-radius: 5em;
+}
+.swiper-slide--custom1__veil {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-subtle;
+  opacity: 0.5;
+}
+
 .swiper-slide--custom1__image1 {
   max-width: 100%;
   padding-bottom: 8em;
@@ -14,7 +44,7 @@
 .swiper-slide--custom1__cite {
   font-family: $serif;
   font-size: nth($sizes, 4);
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
 }
 .swiper-slide__link {

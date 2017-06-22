@@ -1,10 +1,36 @@
+label {
+  margin-top: 1em;
+  display: block;
+}
+
 input, textarea {
   background-color: transparent;
   border-width: 0;
   padding: 0;
   margin: 0;
   resize: none;
+  color: $color-brand;
+  padding: 0.5em;
+  font-weight: normal;
+  border-bottom: 1px solid $color-gray;
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $color-brand;
+  }
 }
+
 input[type=text], textarea {
-  border-bottom: 1px solid $color-brand;
+  width: 100%;
+}
+
+.contact-form {
+  border-width: 0;
+  font-size: nth($sizes, 5);
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__textarea {
+  overflow: auto;
 }

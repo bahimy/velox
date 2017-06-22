@@ -6,39 +6,40 @@
 
     <title>Velox One Page Template</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" title="Default" type="text/css" />
 </head>
 
 <body id="page-start" class="l-page">
-
-    <header class="c-hero l-hero u-text-color-base">
+    <header class="hero l-hero u-text-color-base">
         <div class="l-navbar">
             <div class="l-companies-logo--header" >
                 <a href="#page-start">
-                    <img class="u-float-left c-companies-logo--small"
+                    <img class="u-float-left companies-logo--small"
                         src="./images/common/company_logo.png" alt="company's logo" />
                 </a>
             </div>
-            <nav class="l-companies-nav--header u-float-right">
-                <ul class="c-navmenu u-text-right">
-                    <li class="c-navmenu__item">
-                        <a href="#services" class="c-navmenu__link">Services</a></li>
-                    <li class="c-navmenu__item">
-                        <a href="#portfolio" class="c-navmenu__link">Portfolio</a></li>
-                    <li class="c-navmenu__item">
-                        <a href="#" class="c-navmenu__link">Testimonials</a></li>
-                    <li class="c-navmenu__item">
-                        <a href="#" class="c-navmenu__link">About</a></li>
-                    <li class="c-navmenu__item">
-                        <a href="#" class="c-navmenu__link">Contacts</a></li>
+            <button class="nav-toggle u-float-right js-nav-toggle"><i class="fa">&#xf0c9;</i></button>
+            <nav class="l-companies-nav--header u-float-right js-companies-nav">
+                <ul class="navmenu u-text-right">
+                    <li class="navmenu__item">
+                        <a href="#services" class="navmenu__link">Services</a></li>
+                    <li class="navmenu__item">
+                        <a href="#portfolio" class="navmenu__link">Portfolio</a></li>
+                    <li class="navmenu__item">
+                        <a href="#testimonials" class="navmenu__link">Testimonials</a></li>
+                    <li class="navmenu__item">
+                        <a href="#" class="navmenu__link">About</a></li>
+                    <li class="navmenu__item">
+                        <a href="#contacts" class="navmenu__link">Contacts</a></li>
                 </ul>
             </nav>
         </div>
         <div class="l-header">
-            <h1>Velox One Page Template</h1>
+            <h1>Velox <span class="l-header__ln-break">One Page Template</span></h1>
             <p>Clean, Responsive, customizable one page template</p>
-            <a class="c-button u-large-y-margins" href="#">Get Started Now</a>
+            <a class="button button--h-indent" href="#">Get Started Now</a>
         </div>
     </header>
 
@@ -46,33 +47,33 @@
         <section class="l-content">
             <section id="services" class="l-services">
                 <h2 class="u-text-underline u-text-capitals u-text-center">our services</h2>
-                <ul class="c-services">
-                    <li class="c-service__item">
-                        <a class="c-service__link" href="#services">
-                            <div class="c-service__logo c-service__logo--1"></div>
-                            <h6 class="c-service__header u-zeta">Logo design</h6>
-                            <p class="c-service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+                <ul class="services u-clearfix">
+                    <li class="service__item">
+                        <a class="service__link" href="#services">
+                            <div class="service__logo service__logo--1"></div>
+                            <h6 class="service__header u-zeta">Logo design</h6>
+                            <p class="service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
                         </a>
                     </li>
-                    <li class="c-service__item">
-                        <a class="c-service__link" href="#services">
-                            <div class="c-service__logo c-service__logo--2"></div>
-                            <h6 class="c-service__header u-zeta">web design</h6>
-                            <p class="c-service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+                    <li class="service__item">
+                        <a class="service__link" href="#services">
+                            <div class="service__logo service__logo--2"></div>
+                            <h6 class="service__header u-zeta">web design</h6>
+                            <p class="service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
                         </a>
                     </li>
-                    <li class="c-service__item">
-                        <a class="c-service__link" href="#services">
-                            <div class="c-service__logo c-service__logo--3"></div>
-                            <h6 class="c-service__header u-zeta">branding</h6>
-                            <p class="c-service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+                    <li class="service__item">
+                        <a class="service__link" href="#services">
+                            <div class="service__logo service__logo--3"></div>
+                            <h6 class="service__header u-zeta">branding</h6>
+                            <p class="service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
                         </a>
                     </li>
-                    <li class="c-service__item">
-                        <a class="c-service__link" href="#services">
-                            <div class="c-service__logo c-service__logo--4"></div>
-                            <h6 class="c-service__header u-zeta">illustrations</h6>
-                            <p class="c-service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+                    <li class="service__item">
+                        <a class="service__link" href="#services">
+                            <div class="service__logo service__logo--4"></div>
+                            <h6 class="service__header u-zeta">illustrations</h6>
+                            <p class="service__description">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
                         </a>
                     </li>
                 </ul>
@@ -81,146 +82,182 @@
             <section id="portfolio" class="l-portfolio u-text-center">
                 <div class="l-portfolio__container">
                     <h2 class="u-text-underline u-text-capitals u-text-center">portfolio</h2>
-                    <ul class="c-navmenu u-text-center u-text-capitals u-large-y-margins">
-                        <li class="c-navmenu__item">
-                            <a class="c-navmenu__link--hover" href="#">all</a>
+                    <ul class="navmenu u-text-center u-text-capitals u-large-y-margins">
+                        <li class="navmenu__item">
+                            <a class="navmenu__link--hover" href="#">all</a>
                         </li>
-                        <li class="c-navmenu__item">
-                            <a class="c-navmenu__link--hover" href="#">illustrations</a>
+                        <li class="navmenu__item">
+                            <a class="navmenu__link--hover" href="#">illustrations</a>
                         </li>
-                        <li class="c-navmenu__item">
-                            <a class="c-navmenu__link--hover" href="#">logo</a>
+                        <li class="navmenu__item">
+                            <a class="navmenu__link--hover" href="#">logo</a>
                         </li>
-                        <li class="c-navmenu__item">
-                            <a class="c-navmenu__link--hover" href="#">branding</a>
+                        <li class="navmenu__item">
+                            <a class="navmenu__link--hover" href="#">branding</a>
                         </li>
-                        <li class="c-navmenu__item">
-                            <a class="c-navmenu__link--hover" href="#">web design</a>
-                        </li>
-                    </ul>
-                    <ul class="c-work-samples u-clearfix">
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/website_sample.jpg" alt="Screenshot of a website" />
-                            <p class="c-work-sample__caption">Agency&mdash;PSD Template</p>
-                        </li>
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/press_sample.jpg" alt="Photo of a printed products" />
-                            <p class="c-work-sample__caption">Pure Vodka Branding</p>
-                        </li>
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/website_sample_2.jpg" alt="Screenshot of a website" />
-                            <p class="c-work-sample__caption">Web Design</p>
-                        </li>
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/logo_sample.jpg" alt="Photo of a company's logo" />
-                            <p class="c-work-sample__caption">Everest Logo</p>
-                        </li>
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/poster_sample.jpg" alt="Sample of a poster" />
-                            <p class="c-work-sample__caption">Poster Design</p>
-                        </li>
-                        <li class="c-work-sample__container">
-                            <img class="c-work-sample__image" src="./images/galleries/star_image.jpg" alt="Sample of a illustrative work" />
-                            <p class="c-work-sample__caption">Illustration</p>
+                        <li class="navmenu__item">
+                            <a class="navmenu__link--hover" href="#">web design</a>
                         </li>
                     </ul>
+                    <ul class="work-samples u-clearfix">
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--1"></div>
+                            <p class="work-sample__caption">Agency&mdash;PSD Template</p>
+                        </li>
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--2"></div>
+                            <p class="work-sample__caption">Pure Vodka Branding</p>
+                        </li>
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--3"></div>
+                            <p class="work-sample__caption">Web Design</p>
+                        </li>
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--4"></div>
+                            <p class="work-sample__caption">Everest Logo</p>
+                        </li>
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--5"></div>
+                            <p class="work-sample__caption">Poster Design</p>
+                        </li>
+                        <li class="work-sample__container">
+                            <div class="work-sample__img work-sample__img--6"></div>
+                            <p class="work-sample__caption">Illustration</p>
+                        </li>
+                    </ul>
+                    <a class="button button--h-indent u-text-capitals" href="#">show more</a>
                 </div>
-                <a class="c-button u-large-y-margins u-text-capitals" href="#">show more</a>
             </section>
 
-            <section id="clients" class="clients">
+            <section id="brands" class="l-brands">
                 <h2 class="u-text-underline u-text-capitals u-text-center">recent brands we've worked with</h2>
                 <ul class="l-brands u-clearfix">
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_bakery.png" alt="Bakery logo" />
-                            <div class="c-brand__overlay"></div>
+                    <li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_bakery.png" alt="Bakery logo" />
+                            <div class="brand__overlay"></div>
                         </a>
-                    </li>
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_cavalier.png" alt="Cavalier co logo" />
-                            <div class="c-brand__overlay"></div>
+                    </li><!--
+                    --><li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_cavalier.png" alt="Cavalier co logo" />
+                            <div class="brand__overlay"></div>
                         </a>
-                    </li>
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_harvest.png" alt="Harvest co logo" />
-                            <div class="c-brand__overlay"></div>
+                    </li><!--
+                    --><li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_harvest.png" alt="Harvest co logo" />
+                            <div class="brand__overlay"></div>
                         </a>
-                    </li>
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_landlock.png" alt="Landlock co logo" />
-                            <div class="c-brand__overlay"></div>
+                    </li><!--
+                    --><li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_landlock.png" alt="Landlock co logo" />
+                            <div class="brand__overlay"></div>
                         </a>
-                    </li>
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_spectrum.png" alt="Spectrum co logo" />
-                            <div class="c-brand__overlay"></div>
+                    </li><!--
+                    --><li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_spectrum.png" alt="Spectrum co logo" />
+                            <div class="brand__overlay"></div>
                         </a>
-                    </li>
-                    <li class="c-brand__container">
-                        <a class="c-brand__link" href="#">
-                            <img class="c-brand__logo" src="./images/galleries/logo_he.png" alt="Home energy logo" />
-                            <div class="c-brand__overlay"></div>
+                    </li><!--
+                    --><li class="brand__container">
+                        <a class="brand__link" href="#">
+                            <img class="brand__logo" src="./images/galleries/logo_he.png" alt="Home energy logo" />
+                            <div class="brand__overlay"></div>
                         </a>
                     </li>
                 </ul>
             </section>
 
-            <section id="sayings" class="sayings">
-                <h2 class="u-text-underline u-text-capitals u-text-center">see what others are saying about us</h2>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide--custom1">
-                            <img class="swiper-slide--custom1__image1" src="./images/galleries/photos.jpg">
-                            <p class="swiper-slide--custom1__cite">"Lorem ipsum sit amet, consecteur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua."</p>
-                            <p class="swiper-slide--custom1__caption">Linda from <a class="swiper-slide__link" href="#">example.com</a></p>
+            <section id="testimonials" class="l-testimonials">
+                <div class="l-testimonials__container">
+                    <h2 class="u-text-underline u-text-capitals u-text-center">see what others are saying about us</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide swiper-slide--custom1">
+                                <ul class="swiper-slide--custom1__images">
+                                    <li class="swiper-slide--custom1__item">
+                                        <img src="./images/galleries/man_face01.jpg" alt="man's face photo"
+                                            class="swiper-slide--custom1__image" />
+                                        <div class="swiper-slide--custom1__veil"></div>
+                                    </li><!--
+                                    --><li class="swiper-slide--custom1__item">
+                                        <img src="./images/galleries/woman_face01.jpg" alt="woman's face photo"
+                                            class="swiper-slide--custom1__image swiper-slide--custom1__image--accent" />
+                                    </li><!--
+                                    --><li class="swiper-slide--custom1__item">
+                                        <img src="./images/galleries/man_face02.jpg" alt="man's face photo"
+                                            class="swiper-slide--custom1__image" />
+                                        <div class="swiper-slide--custom1__veil"></div>
+                                    </li>
+                                </ul>
+                                <p class="swiper-slide--custom1__cite">"Lorem ipsum sit amet, consecteur adipisicing elit, sed do eiusmod tempor incididunt ut labore magna aliqua."</p>
+                                <p class="swiper-slide--custom1__caption">Linda from <a class="swiper-slide__link" href="#">example.com</a></p>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
                         </div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- div class="swiper-scrollbar"></div -->
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <!-- div class="swiper-scrollbar"></div -->
+                </div>
+            </section>
+
+            <section id="contacts" class="l-contacts u-clearfix">
+                <div class="l-contacts__container">
+                    <header class="u-clearfix">
+                        <h3 class="l-contacts__header">Contact Us</h3>
+                        <nav>
+                            <ul class="navmenu">
+                                <li class="navmenu__item"><a href="#" class="navmenu__link">Home</a></li>
+                                <li class="navmenu__item"><a href="#about" class="navmenu__link">About</a></li>
+                                <li class="navmenu__item"><a href="#services" class="navmenu__link">Services</a></li>
+                                <li class="navmenu__item"><a href="#blog" class="navmenu__link">Blog</a></li>
+                                <li class="navmenu__item"><a href="#contacts" class="navmenu__link">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="l-contacts__info u-clearfix">
+                        <div class="l-contacts__cell">
+                            <h5>OUR ADDRESS</h5>
+                            <p class="u-text-muted u-zeta">Youse No, 11132, Sector 31, gurgan 122001 India</p>
+                        </div>
+                        <div class="l-contacts__cell l-contacts__cell--drop">
+                            <h5>CALL US</h5>
+                            <p class="u-text-muted u-zeta">+91-09876543210<br>
+                                +0262219018</p>
+                        </div>
+                        <div class="l-contacts__cell l-contacts__cell--drop">
+                            <h5>EMAIL US</h5>
+                            <p class="u-text-muted u-zeta">contactus@email.com</p>
+                        </div>
+                    </div>
+                    <form class="l-contacts__form" action="#" method="post">
+                        <fieldset class="contact-form">
+                            <label class="l-contacts__name" for="name">
+                                Name:<input type="text" name="name" id="name" value="" />
+                            </label>
+                            <label class="l-contacts__subject" for="subject">
+                                Subject:<input type="text" name="subject" id="subject" value="" />
+                            </label>
+                            <label for="message" class="l-contacts__message">
+                                Your Message:<textarea name="message" id="message"
+                                    class="contacts__textarea" rows=10></textarea>
+                            </label>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
         </section>
     </main>
-    <!-- ul class="c-navmenu">
-        <li class="c-navmenu__item">
-            <a href="#" class="c-navmenu__link">Services</a></li>
-        <li class="c-navmenu__item">
-            <a href="#" class="c-navmenu__link">Portfolio</a></li>
-        <li class="c-navmenu__item">
-            <a href="#" class="c-navmenu__link">Testimonials</a></li>
-        <li class="c-navmenu__item">
-            <a href="#" class="c-navmenu__link">About</a></li>
-        <li class="c-navmenu__item">
-            <a href="#" class="c-navmenu__link">Contacts</a></li>
-    </ul>
-    <div class="l-portfolio">
-        <figure class="c-work-sample">
-            <figcaption class="c-work-sample__caption">Illustration</figcaption>
-        </figure>
-    </div>
-    <form class="l-contact" action="#" method="post">
-        <label class="c-contact__label"><p>Name</p>
-            <input type="text" name="Name" id="c-contact__name" value="" />
-        </label>
-        <label class="c-contact__label"><p>Subject</p>
-            <input type="text" name="Subject" id="c-contact__subject" value="" />
-        </label>
-        <label for="c-contact__message" class="c-contact__label" for=""><p>Your message</p>
-            <textarea name="message" id="c-contact__message" rows="8" cols="40"></textarea>
-        </label>
-    </form -->
 
     <script src="./js/swiper.js"></script>
+    <script src="./js/script.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'horizontal',

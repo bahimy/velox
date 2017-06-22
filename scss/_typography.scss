@@ -1,9 +1,15 @@
-/*
-  There are some common font definitions in _global.scss.
-*/
-
 $text-initial-size: 5.5em; // Seed for font sizes generator
 $sizes: formTextSizes($text-initial-size);
+
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embeded-opentype"),
+       url("../fonts/fontawesome-webfont.woff2") format("woff2"),
+       url("../fonts/fontawesome-webfont.woff") format("woff"),
+       url("../fonts/fontawesome-webfont.ttf") format("truetype"),
+       url("../fonts/fontawesome-webfont.svg") format("svg");
+}
 
 $serif: 'Lora', 'Girgia', 'Times New Roman', serif;
 $sans-serif: 'Open Sans', 'Verdana', sans-serif;
@@ -11,26 +17,29 @@ $sans-serif: 'Open Sans', 'Verdana', sans-serif;
 @import './helpers/_mixins.typography.scss';
 @import './helpers/_utility.typography.scss';
 
-h1, .u-alpha {
-  font-size: nth($sizes, 1);
-  font-family: $serif;
-}
-h2, .u-beta {
-  font-family: $serif;
-  font-size: nth($sizes, 2);
-}
-h3, .u-gamma {
-  font-family: $serif;
-  font-size: nth($sizes, 3);
-}
-h4, .u-delta {
-  font-size: nth($sizes, 4);
-}
-h5, .u-epsilon {
-  font-size: nth($sizes, 5);
-}
-h6, .u-zeta {
-  font-size: nth($sizes, 6);
+h1,
+h2,
+h3 {
+  padding: 0 0.2em;
 }
 
+h1, .u-alpha   { font-size: nth($sizes, 1); font-family: $serif; }
+h2, .u-beta    { font-size: nth($sizes, 2); font-family: $serif; }
+h3, .u-gamma   { font-size: nth($sizes, 3); font-family: $serif; }
+h4, .u-delta   { font-size: nth($sizes, 4); }
+
+h5,
+.u-epsilon {
+  font-size: nth($sizes, 5);
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+h6, .u-zeta    { font-size: nth($sizes, 6); }
+
 p { @include text-regular($sans-serif, 5, normal); }
+
+.fa {
+  font-family: "Font Awesome";
+  font-style: normal;
+}

@@ -1,19 +1,19 @@
-.c-navmenu {
+.navmenu {
   margin: 0;
   padding: 0;
 }
-.c-navmenu__item {
+.navmenu__item {
   line-height: 1;
   padding: 0 1em;
   display: inline;
 }
-.c-navmenu__link {
+.navmenu__link {
   display: inline-block;
   padding: 1em 0;
   @include text-navmenu($sans-serif, 6);
 }
-.c-navmenu__link--hover {
-  @extend .c-navmenu__link;
+.navmenu__link--hover {
+  @extend .navmenu__link;
   color: $color-gray;
   padding-bottom: 0.6em;
   &:hover {
