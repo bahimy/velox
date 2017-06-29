@@ -97,15 +97,34 @@
   .swiper-slide--custom1__item {
     padding: 0 0.5em;
   }
+
+                    /*        Contacts
+                     *****************************/
+
+  .l-contacts__info {
+    float: none;
+    width: 100%;
+  }
+
+  .l-contacts__cell--drop {
+    float: left;
+  }
+
+  .l-contacts__form {
+    width: 100%;
+  }
+
+  .l-contacts__field--drop {
+    width: 100%;
+  }
+
+  .l-contacts__header,
+  .l-contacts__navmenu {
+    float: none;
+  }
 }
 
 
-                  /*        Contacts
-                   *****************************/
-
-.l-contacts__cell--drop {
-  float: left;
-}
 
 
 
@@ -159,3 +178,45 @@
   }
 }
 
+
+
+
+
+
+
+
+/******************************************************************************/
+
+@media screen and (max-width: 500px) {
+
+  .l-footer__container {
+    padding-top: 5em;
+  }
+
+  .socials,
+  .l-copyright {
+    float: none;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+/******************************************************************************/
+
+@media screen and (min-width: 1024px) {
+  .l-navbar,
+  .l-services,
+  .l-portfolio__container,
+  .l-testimonials__container,
+  .l-contacts__container,
+  .l-footer__container,
+  .l-brands {
+    max-width: 1024px;
+  }
+}

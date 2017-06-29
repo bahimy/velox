@@ -1,5 +1,5 @@
 label {
-  margin-top: 1em;
+  margin: 1em 0;
   display: block;
 }
 
@@ -26,11 +26,18 @@ input[type=text], textarea {
 
 .contact-form {
   border-width: 0;
-  font-size: nth($sizes, 5);
   padding: 0;
   margin: 0;
 }
 
 .contacts__textarea {
   overflow: auto;
+}
+
+.contacts__label {
+  font-size: nth($sizes, 5);
+}
+
+.contacts__label--mr {
+  margin-right: 2%;
 }

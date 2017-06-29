@@ -1072,6 +1072,7 @@ a {
 
 .button {
   display: inline-block;
+  border-width: 0;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -1081,7 +1082,8 @@ a {
   color: white;
   font-size: 1.74023em;
   border-radius: 1.5em;
-  background-color: #00a5ff; }
+  background-color: #00a5ff;
+  box-shadow: 1px 1px 3px black; }
 
 .button--h-indent {
   margin-top: 2em;
@@ -1093,6 +1095,21 @@ a {
   color: #2e3138;
   font-size: 3em;
   display: none; }
+
+.button--social {
+  width: 2em;
+  height: 2em;
+  padding: .5em;
+  background-color: #8f95a3;
+  box-shadow: none; }
+
+.button--minimize {
+  font-size: 3em;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  margin: -1em auto;
+  display: block; }
 
 .navmenu {
   margin: 0;
@@ -1186,7 +1203,8 @@ a {
   float: left;
   margin-right: 2%;
   margin-bottom: 2em;
-  width: 32%; }
+  width: 32%;
+  box-shadow: 1px 1px 6px black; }
   .work-sample__container:nth-child(3n) {
     margin-right: 0; }
 
@@ -1257,8 +1275,20 @@ a {
   display: block;
   margin: 0 auto; }
 
+/*      Socials
+ ***************************/
+.socials {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right; }
+
+.socials__container {
+  display: inline;
+  padding-left: 1em; }
+
 label {
-  margin-top: 1em;
+  margin: 1em 0;
   display: block; }
 
 input, textarea {
@@ -1280,12 +1310,17 @@ input[type=text], textarea {
 
 .contact-form {
   border-width: 0;
-  font-size: 1.74023em;
   padding: 0;
   margin: 0; }
 
 .contacts__textarea {
   overflow: auto; }
+
+.contacts__label {
+  font-size: 1.74023em; }
+
+.contacts__label--mr {
+  margin-right: 2%; }
 
 .swiper-container {
   width: 100%;
@@ -1350,6 +1385,9 @@ input[type=text], textarea {
   background: url("../images/backgrounds/mountains.jpg") 0 0/cover no-repeat #8f95a3;
   height: 100vh; }
 
+.contacts {
+  transition: all 1s; }
+
 /*          Header
  ******************************/
 .l-hero {
@@ -1377,13 +1415,17 @@ input[type=text], textarea {
 /*        Services
  ****************************/
 .l-services {
-  padding-top: 1px; }
+  padding-top: 1px;
+  margin: 0 auto; }
 
 /*       Portoflio
  ****************************/
 .l-portfolio {
   padding: 1px 0;
   background-color: #e3e5e8; }
+
+.l-portfolio__container {
+  margin: 0 auto; }
 
 /*        Brands
  ************************/
@@ -1398,35 +1440,60 @@ input[type=text], textarea {
   background-color: #e3e5e8;
   padding: 3em 0; }
 
+.l-testimonials__container {
+  margin: 0 auto; }
+
 /*      Contact Us
  ***************************/
 .l-contacts {
   padding: 3em 1em;
   background-color: #2e3138;
-  color: white; }
+  color: white;
+  padding-bottom: 5em; }
+
+.l-contacts__container {
+  margin: 0 auto; }
+
+.l-contacts__info {
+  float: left;
+  width: 30%;
+  padding-top: 2em; }
 
 .l-contacts__header {
   margin: 0;
-  line-height: 1; }
+  line-height: 1;
+  float: left; }
+
+.l-contacts__navmenu {
+  float: right; }
 
 .l-contacts__cell {
-  margin: 1em; }
+  margin: 1em;
+  padding: 1px; }
 
 .l-contacts__form {
-  padding: 0 1em; }
-
-.l-contacts__name {
   float: left;
-  width: 48%; }
+  width: 70%;
+  padding: 1em; }
 
-.l-contacts__subject {
-  float: right;
-  width: 48%; }
+.l-contacts__field--drop {
+  float: left;
+  width: 49%; }
 
 .l-contacts__message {
   clear: both;
-  float: left;
   width: 100%; }
+
+.l-copyright {
+  float: left;
+  padding: .5em 0;
+  margin: 0; }
+
+.l-footer {
+  padding: 1em; }
+
+.l-footer__container {
+  margin: 0 auto; }
 
 @media screen and (max-width: 740px) {
   /*      Common
@@ -1495,12 +1562,26 @@ input[type=text], textarea {
     font-size: 0.7em; }
 
   .swiper-slide--custom1__item {
-    padding: 0 0.5em; } }
-/*        Contacts
- *****************************/
-.l-contacts__cell--drop {
-  float: left; }
+    padding: 0 0.5em; }
 
+  /*        Contacts
+   *****************************/
+  .l-contacts__info {
+    float: none;
+    width: 100%; }
+
+  .l-contacts__cell--drop {
+    float: left; }
+
+  .l-contacts__form {
+    width: 100%; }
+
+  .l-contacts__field--drop {
+    width: 100%; }
+
+  .l-contacts__header,
+  .l-contacts__navmenu {
+    float: none; } }
 /******************************************************************************/
 @media screen and (max-width: 400px) {
   /*    Portfolio
@@ -1533,5 +1614,24 @@ input[type=text], textarea {
    *****************************/
   .brand__container {
     width: 50%; } }
+/******************************************************************************/
+@media screen and (max-width: 500px) {
+  .l-footer__container {
+    padding-top: 5em; }
+
+  .socials,
+  .l-copyright {
+    float: none;
+    text-align: center; } }
+/******************************************************************************/
+@media screen and (min-width: 1024px) {
+  .l-navbar,
+  .l-services,
+  .l-portfolio__container,
+  .l-testimonials__container,
+  .l-contacts__container,
+  .l-footer__container,
+  .l-brands {
+    max-width: 1024px; } }
 
 /*# sourceMappingURL=style.css.map */

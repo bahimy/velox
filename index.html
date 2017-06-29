@@ -208,11 +208,11 @@
                 </div>
             </section>
 
-            <section id="contacts" class="l-contacts u-clearfix">
+            <section id="contacts" class="contacts l-contacts u-clearfix js-contacts">
                 <div class="l-contacts__container">
                     <header class="u-clearfix">
                         <h3 class="l-contacts__header">Contact Us</h3>
-                        <nav>
+                        <nav class="l-contacts__navmenu">
                             <ul class="navmenu">
                                 <li class="navmenu__item"><a href="#" class="navmenu__link">Home</a></li>
                                 <li class="navmenu__item"><a href="#about" class="navmenu__link">About</a></li>
@@ -239,22 +239,41 @@
                     </div>
                     <form class="l-contacts__form" action="#" method="post">
                         <fieldset class="contact-form">
-                            <label class="l-contacts__name" for="name">
+                            <label class="l-contacts__name contacts__label contacts__label--mr l-contacts__field--drop" for="name">
                                 Name:<input type="text" name="name" id="name" value="" />
                             </label>
-                            <label class="l-contacts__subject" for="subject">
+                            <label class="l-contacts__subject contacts__label l-contacts__field--drop" for="subject">
                                 Subject:<input type="text" name="subject" id="subject" value="" />
                             </label>
-                            <label for="message" class="l-contacts__message">
+                            <label for="message" class="l-contacts__message contacts__label">
                                 Your Message:<textarea name="message" id="message"
-                                    class="contacts__textarea" rows=10></textarea>
+                                    class="contacts__textarea" rows=5></textarea>
                             </label>
+                            <button type="submit" class="button">Send message</button>
                         </fieldset>
                     </form>
                 </div>
             </section>
+
+            <button class="button button--minimize js-minimize-contacts" type="submit" title="Toggle contact form"><i class="fa js-minimize-symbol"></i></button>
         </section>
     </main>
+
+    <footer class="l-footer">
+        <div class="l-footer__container u-clearfix">
+            <ul class="socials">
+                <li class="socials__container">
+                    <a href="#" class="button button--social"><i class="fa">&#xf09a;</i></a></li>
+                <li class="socials__container">
+                    <a href="#" class="button button--social"><i class="fa">&#xf099;</i></a></li>
+                <li class="socials__container">
+                    <a href="#" class="button button--social"><i class="fa">&#xf16e;</i></a></li>
+                <li class="socials__container">
+                    <a href="#" class="button button--social"><i class="fa">&#xf0e1;</i></a></li>
+            </ul>
+            <p class="l-copyright">&#169; 2016 Nishant Bazzard</p>
+        </div>
+    </footer>
 
     <script src="./js/swiper.js"></script>
     <script src="./js/script.js"></script>

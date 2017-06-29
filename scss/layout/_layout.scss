@@ -36,6 +36,7 @@
 
 .l-services {
   padding-top: 1px;
+  margin: 0 auto;
 }
 
 
@@ -45,6 +46,10 @@
 .l-portfolio {
   padding: 1px 0;
   background-color: $color-subtle;
+}
+
+.l-portfolio__container {
+  margin: 0 auto;
 }
 
 
@@ -67,6 +72,10 @@
   padding: 3em 0;
 }
 
+.l-testimonials__container {
+  margin: 0 auto;
+}
+
 
               /*      Contact Us
                ***************************/
@@ -75,33 +84,60 @@
   padding: 3em 1em;
   background-color: $color-strong;
   color: $color-base;
+  padding-bottom: 5em;
+}
+
+.l-contacts__container {
+  margin: 0 auto;
+}
+
+.l-contacts__info {
+  float: left;
+  width: 30%;
+  padding-top: 2em;
 }
 
 .l-contacts__header {
   margin: 0;
   line-height: 1;
+  float: left;
+}
+
+.l-contacts__navmenu {
+  float: right;
 }
 
 .l-contacts__cell {
   margin: 1em;
+  padding: 1px;
 }
 
 .l-contacts__form {
-  padding: 0 1em;
-}
-
-.l-contacts__name {
   float: left;
-  width: 48%;
+  width: 70%;
+  padding: 1em;
 }
 
-.l-contacts__subject {
-  float: right;
-  width: 48%;
+.l-contacts__field--drop {
+  float: left;
+  width: 49%;
 }
 
 .l-contacts__message {
   clear: both;
-  float: left;
   width: 100%;
+}
+
+.l-copyright {
+  float: left;
+  padding: .5em 0;
+  margin: 0;
+}
+
+.l-footer {
+  padding: 1em;
+}
+
+.l-footer__container {
+  margin: 0 auto;
 }
