@@ -81,13 +81,16 @@
                ***************************/
 
 .l-contacts {
-  padding: 3em 1em;
   background-color: $color-strong;
   color: $color-base;
-  padding-bottom: 5em;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
 }
 
 .l-contacts__container {
+  padding: 3em 1em;
+  padding-bottom: 5em;
   margin: 0 auto;
 }
 

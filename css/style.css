@@ -1446,12 +1446,15 @@ input[type=text], textarea {
 /*      Contact Us
  ***************************/
 .l-contacts {
-  padding: 3em 1em;
   background-color: #2e3138;
   color: white;
-  padding-bottom: 5em; }
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s; }
 
 .l-contacts__container {
+  padding: 3em 1em;
+  padding-bottom: 5em;
   margin: 0 auto; }
 
 .l-contacts__info {

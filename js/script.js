@@ -23,17 +23,19 @@ document.body.addEventListener("click", function() {
         /*      toggle contacts
          *********************************/
 
-var contacts = document.querySelector('.js-contacts')
+var contacts = document.querySelector('.js-accordion')
 var contactsToggleButton = document.querySelector('.js-minimize-contacts')
 var symbol = document.querySelector('.js-minimize-symbol')
 
 var symbolUp = document.createTextNode("\uf106")
 var symbolDown = document.createTextNode("\uf107")
 
-symbol.appendChild(symbolUp)
+symbol.appendChild(symbolDown)
 
-contactsToggleButton.addEventListener("click", function(e) {
-    contacts.classList.toggle("u-remove")
+contactsToggleButton.addEventListener("click", function() {
+    if (contacts.style.maxHeight) contacts.style.maxHeight = null
+    else contacts.style.maxHeight = contacts.scrollHeight + "px"
+
     if (symbol.firstChild == symbolUp) symbol.replaceChild(symbolDown, symbolUp)
     else symbol.replaceChild(symbolUp, symbolDown)
 })
