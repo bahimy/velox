@@ -25,6 +25,7 @@ document.body.addEventListener("click", function() {
 
 var contacts = document.querySelector('.js-accordion')
 var contactsToggleButton = document.querySelector('.js-minimize-contacts')
+var contactsAnchorLink = document.querySelector('.js-bring-contacts')
 var symbol = document.querySelector('.js-minimize-symbol')
 
 var symbolUp = document.createTextNode("\uf106")
@@ -38,4 +39,9 @@ contactsToggleButton.addEventListener("click", function() {
 
     if (symbol.firstChild == symbolUp) symbol.replaceChild(symbolDown, symbolUp)
     else symbol.replaceChild(symbolUp, symbolDown)
+})
+
+contactsAnchorLink.addEventListener("click", function() {
+    contacts.style.maxHeight = contacts.scrollHeight + "px"
+    symbol.replaceChild(symbolUp, symbolDown)
 })
